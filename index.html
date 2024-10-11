@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Mi Información</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">ACERCA DE MÍ</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#certificados" onclick="seleccionar()">CERTIFICADOS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="Imágenes/JuanGanoza.jpg" alt="">
+            </div>
+            <h1>JUAN GANOZA</h1>
+            <h2>Estudiante de Ingeniería de Sistemas - Aficionado a Redes y Seguridad Informática</h2>
+        
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/juan-carlos-ganoza-gutarra-714912290/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/SamRoy01" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://wa.me/+51998357302" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/juanganoza01" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/mascielx/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION ACERCA DE MÍ -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Acerca de Mí</h2>
+            <p><span>Hola, soy Juan Carlos, </span> estudiante de Ingeniería de Sistemas de la Universidad Nacional del Centro del Perú, con un enfoque en redes y seguridad informática. Me capacito constantemente para mantenerme al día en un campo de rápida evolución. En mi tiempo libre, disfruto tocar la guitarra y formo parte de una banda musical.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            01 de Febrero
+                        </li>
+                        <li>
+                            <strong>Celular</strong>
+                            998357302
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            juanganoza10@gmail.com
+                        </li>
+                        <li>
+                            <strong>Sitio Web</strong>
+                            
+                        </li>
+                        <li>
+                            <strong>Ocupación</strong>
+                            <span>ESTUDIANTE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-linux"></i>
+                            <span>LINUX OS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>CAMINATA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>CIENCIAS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>CONDUCIR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION HABILIDADES -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Habilidades Técnicas -->
+                <div class="col">
+                    <h3>Habilidades Técnicas</h3>
+                    <div class="skill">
+                        <span>Ciberseguridad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Ofimática</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Herramientas con IA</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Redes Informáticas</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Programación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Habilidades Profesionales -->
+                <div class="col">
+                    <h3>Habilidades Profesionales</h3>
+                    <div class="skill">
+                        <span>Inteligencia Emocional</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Liderazgo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Introducción a la Ciencia de Datos</h4>
+                        <span class="casa">Cisco Networking Academy</span>
+                        <span class="fecha">2024</span>
+                        <p>Completé estudios en introducción a la ciencia de datos, adquiriendo conocimientos en análisis de datos, herramientas de visualización y técnicas de manipulación y procesamiento, para obtener insights y tomar decisiones informadas.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Fundamentos de Seguridad de la Información</h4>
+                        <span class="casa">Centro Nacional de Seguridad Digital</span>
+                        <span class="fecha">2024</span>
+                        <p>Completé estudios en fundamentos de seguridad de la información, adquiriendo conocimientos sobre protección de datos, gestión de riesgos y estrategias para asegurar la confidencialidad, integridad y disponibilidad de la información en organizaciones.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Introdución a la Ciberseguridad</h4>
+                        <span class="casa">Cisco Networking Academy</span>
+                        <span class="fecha">2023</span>
+                        <p>Completé estudios en introducción a la ciberseguridad, adquiriendo conocimientos sobre seguridad en línea, ciberamenazas, ataques y vulnerabilidades, así como estrategias para que las organizaciones protejan sus operaciones.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Linux Básico</h4>
+                        <span class="casa">Cisco Networking Academy</span>
+                        <span class="fecha">2023</span>
+                        <p>Completé estudios de NDG Linux Unhatched adquiriendo conocimientos en instalación y configuración del sistema Linux, además sobre su interfaz de línea de comandos</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ingeniería de Sistemas</h4>
+                        <span class="casa">Universidad Nacional del Centro del Perú - Huancayo</span>
+                        <span class="fecha">2021</span>
+                        <p>Actualmente estudiando Ingeniería de Sistemas con enfoque en el área de redes y seguridad informática.
+                            </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Encargado del Sistema de Admisión</h4>
+                        <span class="casa">Universidad Nacional del Centro del Perú - Huancayo</span>
+                        <span class="fecha">2024</span>
+                        <p>Supervisé el proceso de inscripciones en el sistema de admisión, gestionando la resolución de fallos del servidor y garantizando su óptimo funcionamiento. Aseguré la correcta operación de herramientas tecnológicas (tabletas, laptops, etc.) para un desarrollo eficiente del proceso.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Ponente en las capacitaciones en competencias tecnológicas y pedagógicas</h4>
+                        <span class="casa">Unidad de Gestión Educativa Local - Chupaca</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p>Impartí capacitaciones centradas en el fortalecimiento de competencias tecnológicas y pedagógicas, proporcionando a los PIP y CIST herramientas y estrategias para mejorar laintegración de tecnologías en el ámbito educativo y optimizar sus prácticas pedagógicas.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CERTIFICADOS -->
+    <section id="certificados" class="certificados">
+        <div class="contenido-seccion">
+            <h2>CERTIFICADOS</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="Imágenes/Seguridad.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Fundamento de Seguridad de la Información</h3>
+                        <p>Constancia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="Imágenes/DataScience.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Introducción a la Ciencia de Datos</h3>
+                        <p>Certificado</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="Imágenes/LinuxEssentials.jpg" alt="">
+                    <div class="overlay">
+                        <h3>NDG Linux Esencial</h3>
+                        <p>Certificado</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="Imágenes/Cibersecurity.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Introducció a la Ciberseguridad</h3>
+                        <p>Certificado</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="Imágenes/TecnoTIC.jpg" alt="">
+                    <div class="overlay">
+                        <h3>II TecnoTIC 2024</h3>
+                        <p>Constancia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="Imágenes/AIP.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Conocimientos pedagógicos y disciplinares para la práctica Docente - AIP</h3>
+                        <p>Constancia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="Imágenes/Ubicación.jpg" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Av. Mariscal Castilla N° 3909, El Tambo
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamame: 998357302 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: juanganoza10@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/juan-carlos-ganoza-gutarra-714912290/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/SamRoy01" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://wa.me/+51998357302" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/juanganoza01" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/mascielx/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
