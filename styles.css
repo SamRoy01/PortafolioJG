@@ -170,27 +170,53 @@ html{
     font-weight: bold;
     border-radius: 5px;
 }
-.sobremi .fila .col .contenedor-intereses{
+.sobremi .fila .col .contenedor-intereses {
     display: flex;
     flex-wrap: wrap;
 }
-.sobremi .fila .col .contenedor-intereses .interes{
+
+.sobremi .fila .col .contenedor-intereses .interes {
     width: 100px;
     height: 100px;
     background-color: #252A2E;
-    border-radius: 10px;
+    border-radius: 100px;
     margin: 0 15px 15px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: .3s;
-}.sobremi .fila .col .contenedor-intereses .interes:hover{
-    background-color: #1dc8e4;
+    transition: background-color 0.3s, transform 0.3s, border 0.3s; /* Transición suave */
+    border: 4px solid #fff; /* Borde inicial blanco */
+    text-decoration: none; /* Eliminar subrayado de enlaces */
+    color: #fff; /* Color del texto */
 }
-.sobremi .fila .col .contenedor-intereses .interes i{
-    font-size: 30px;
-    margin-bottom: 10px;
+
+.sobremi .fila .col .contenedor-intereses .interes:hover {
+    background-color: #1dc8e4;
+    border: 4px solid #fff; /* Mantener el borde blanco */
+    box-shadow: 0 0 10px #1dc8e4; /* Sombra adicional para resaltar */
+    transform: scale(1.2); /* Aumento del tamaño al pasar el mouse */
+}
+
+.sobremi .fila .col .contenedor-intereses .interes i {
+    font-size: 45px; /* Tamaño del ícono */
+    margin-bottom: 5px; /* Espacio entre ícono y texto */
+}
+
+.sobremi .fila .col .contenedor-intereses .interes span {
+    font-size: 12px; /* Tamaño del texto */
+    text-align: center; /* Centra el texto */
+}
+
+.sobremi .fila .col .contenedor-intereses .interes a {
+    display: flex; /* Para que el enlace ocupe todo el espacio del contenedor */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Ocupa todo el ancho */
+    height: 100%; /* Ocupa toda la altura */
+    color: inherit; /* Hereda el color del padre */
+    text-decoration: none; /* Asegura que no haya subrayado */
 }
 .sobremi button{
     cursor: pointer;
@@ -430,225 +456,76 @@ html{
         margin-top: 10px;
     }
 }
-/* SECCION HABILIDADES */
-.skills{
-    background-color: #252A2E;
-    color: #fff;
-    padding: 50px 20px;
-}
-.skills .contenido-seccion{
-    max-width: 1100px;
-    margin: auto;
-}
-.skills h2{
-    font-size: 48px;
-    font-family: 'Righteous';
-    text-align: center;
-    padding: 20px 0;
 
-}
-.skills .fila{
-    display: flex;
-}
-.skills .fila .col{
-    width: 50%;
-    padding: 0 20px;
-}
-.skills .fila .col h3{
-    font-size: 28px;
-    font-family: 'Righteous';
-    margin-bottom: 25px;
-}
-.skills .skill > span{
-    font-weight: bold;
-    display: block;
-    margin-bottom: 10px;
-}
-.skills .skill .barra-skill{
-    height: 8px;
-    width: 80%;
-    background-color: #131517;
-    position: relative;
-    margin-bottom: 30px;
-}
-.skills .skill .progreso{
-    background-color: #1dc8e4;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 8px;
-}
-.skills .skill .barra-skill span{
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    background-color: #1dc8e4;
-    border-radius: 50px;
-    line-height: 40px;
-    text-align: center;
-    top: -17px;
-    right: -15px;
-    font-size: 14px;
-}
-/* Estas clases se agregaran dinamicamente mediante javascript */
-.skills .skill .javascript{
-    width: 0%;
-    animation: 2s javascript forwards;
-}
-@keyframes javascript {
-    0%{width: 0%;}
-    100%{width: 75%;}
-}
-
-.skills .skill .htmlcss{
-    width: 0%;
-    animation: 2s htmlcss forwards;
-}
-@keyframes htmlcss {
-    0%{width: 0%;}
-    100%{width: 89%;}
-}
-
-.skills .skill .photoshop{
-    width: 0%;
-    animation: 2s photoshop forwards;
-}
-@keyframes photoshop {
-    0%{width: 0%;}
-    100%{width: 95%;}
-}
-
-.skills .skill .wordpress{
-    width: 0%;
-    animation: 2s wordpress forwards;
-}
-@keyframes wordpress {
-    0%{width: 0%;}
-    100%{width: 81%;}
-}
-
-.skills .skill .drupal{
-    width: 0%;
-    animation: 2s drupal forwards;
-}
-@keyframes drupal {
-    0%{width: 0%;}
-    100%{width: 55%;}
-}
-
-.skills .skill .comunicacion{
-    width: 0%;
-    animation: 2s comunicacion forwards;
-}
-@keyframes comunicacion {
-    0%{width: 0%;}
-    100%{width: 80%;}
-}
-
-.skills .skill .trabajo{
-    width: 0%;
-    animation: 2s trabajo forwards;
-}
-@keyframes trabajo {
-    0%{width: 0%;}
-    100%{width: 70%;}
-}
-
-.skills .skill .creatividad{
-    width: 0%;
-    animation: 2s creatividad forwards;
-}
-@keyframes creatividad {
-    0%{width: 0%;}
-    100%{width: 99%;}
-}
-
-.skills .skill .dedicacion{
-    width: 0%;
-    animation: 2s dedicacion forwards;
-}
-@keyframes dedicacion {
-    0%{width: 0%;}
-    100%{width: 65%;}
-}
-
-.skills .skill .proyect{
-    width: 0%;
-    animation: 2s proyect forwards;
-}
-@keyframes proyect {
-    0%{width: 0%;}
-    100%{width: 94%;}
-}
-/* SECCION CURRICULUM */
-.curriculum{
+/* SECCION TRAYECTORIA */
+.trayectoria{
     background-color: #1e2326;
     color: #fff;
     padding: 50px 20px;
 }
-.curriculum .contenido-seccion{
+.trayectoria .contenido-seccion{
     max-width: 1100px;
     margin: auto;
 }
-.curriculum h2{
+.trayectoria h2{
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
 
 }
-.curriculum .fila{
+.trayectoria .fila{
     display: flex;
     justify-content: space-between;
 }
-.curriculum .fila .col{
+.trayectoria .fila .col{
     width: 49%;
     padding: 0 20px;
 }
-.curriculum .fila .col h3{
+.trayectoria .fila .col h3{
     font-size: 28px;
     font-family: 'Righteous';
     margin-bottom: 25px;
 }
-.curriculum .fila .izquierda{
+.trayectoria .fila .izquierda{
     border-right: 2px solid #252A2E;
 }
-.curriculum .fila .derecha{
+.trayectoria .fila .derecha{
     border-left: 2px solid #252A2E;
 }
-.curriculum .fila .item{
+.trayectoria .fila .item{
     padding: 25px;
     margin-bottom: 30px;
     background-color: #252A2E;
     position: relative;
 }
-.curriculum .fila .item h4{
+.trayectoria .fila .item h4{
     font-size: 20px;
     margin-bottom: 10px;
 }
-.curriculum .fila .item .casa{
+.trayectoria .fila .item .casa{
     color: #1dc8e4;
     font-size: 22px;
     font-weight: bold;
     display: block;
 }
-.curriculum .fila .item .fecha{
+.trayectoria .fila .item .fecha{
     display: block;
     color: #1dc8e4;
     margin-bottom: 10px;
 }
-.curriculum .fila .item p{
+.trayectoria .fila .item p{
     line-height: 24px;
 }
-.curriculum .fila .izq{
+.trayectoria .fila .izq{
     border-right: 2px solid #1dc8e4;
     margin-right: 20px;
 }
-.curriculum .fila .der{
+.trayectoria .fila .der{
     border-left: 2px solid #1dc8e4;
     margin-left: 20px;
 }
-.curriculum .fila .item .conectori{
+.trayectoria .fila .item .conectori{
     height: 2px;
     background-color: #1dc8e4;
     width: 47px;
@@ -657,7 +534,7 @@ html{
     right: -47px;
     z-index: 5;
 }
-.curriculum .fila .item .conectori .circuloi{
+.trayectoria .fila .item .conectori .circuloi{
     display: block;
     height: 10px;
     width: 10px;
@@ -667,7 +544,7 @@ html{
     position: relative;
     bottom: 4px;
 }
-.curriculum .fila .item .conectord{
+.trayectoria .fila .item .conectord{
     height: 2px;
     background-color: #1dc8e4;
     width: 47px;
@@ -676,7 +553,7 @@ html{
     left: -47px;
     z-index: 5;
 }
-.curriculum .fila .item .conectord .circulod{
+.trayectoria .fila .item .conectord .circulod{
     display: block;
     height: 10px;
     width: 10px;
@@ -743,90 +620,7 @@ html{
 .certificados .galeria .proyecto .overlay:hover h3{
     margin-bottom: 0px;
 }
-/* SECCION CONTACTO */
-.contacto{
-    background-image: url(img/contact_bg.png);
-    background-color: #1e2326;
-    color: #fff;
-    padding: 50px 0;
-}
-.contacto .contenido-seccion{
-    max-width: 1100px;
-    margin: auto;
-}
-.contacto h2{
-    font-size: 48px;
-    font-family: 'Righteous';
-    text-align: center;
-    padding: 20px 0;
-}
-.contacto .fila{
-    display: flex;
-}
-.contacto .col{
-    width: 50%;
-    padding: 10px;
-    position: relative;
-}
-.contacto .col input, .contacto .col textarea{
-    display: block;
-    width: 100%;
-    padding: 18px;
-    border: none;
-    margin-bottom: 20px;
-    background-color: #252A2E;
-    color: #fff;
-    font-size: 18px;
-}
-.contacto button{
-    cursor: pointer;
-    background-color: transparent;
-    border: 2px solid #fff;
-    width: fit-content;
-    display: block;
-    margin: 20px auto;
-    padding: 10px 22px;
-    font-size: 16px;
-    color: #fff;
-    position: relative;
-    z-index: 10;
-}
-.contacto button .overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: #1dc8e4;
-    z-index: -1;
-    transition: 1s;
-}
-.contacto button:hover .overlay{
-    width: 100%;
-}
-.contacto .col img{
-    width: 100%;
-}
-.contacto .col .info{
-    position: absolute;
-    top: 40%;
-    background-color: #252A2E;
-    padding: 20px;
-    max-width: 350px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.contacto .col .info ul{
-    list-style: none;
-}
-.contacto .col .info ul li{
-    margin-bottom: 20px;
-}
-.contacto .col .info ul li i{
-    color: #1dc8e4;
-    display: inline-block;
-    margin-right: 20px;
-}
+
 footer{
     background-color: #252A2E;
     color: #fff;
@@ -896,24 +690,14 @@ footer .arriba{
     .sobremi .fila .col{
         width: fit-content;
     }
-
-    .skills .fila{
+    
+    .trayectoria .fila{
         display: block;
     }
-    .skills .fila .col{
-        width: 100%;
-    }
-    .skills .fila .col .barra-skill{
-        width: 100%;
-    }
-
-    .curriculum .fila{
-        display: block;
-    }
-    .curriculum .fila .col{
+    .trayectoria .fila .col{
         width: 90%;
     }
-    .curriculum .fila .derecha{
+    .trayectoria .fila .derecha{
         margin-left: 20px;
     }
 
@@ -926,11 +710,5 @@ footer .arriba{
     }
     .certificados .galeria .proyecto img{
         width: 100%;
-    }
-    .contacto .fila{
-        display: block;
-    }
-    .contacto .fila .col{
-        width: 100%;
-    }
+    }  
 }
